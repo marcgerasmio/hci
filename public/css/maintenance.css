@@ -1,0 +1,145 @@
+/* Custom CSS for rectangular icon design */
+.rectangle-icon {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    border-radius: 15px; /* Rounded corners */
+    padding: 0.5rem; /* Add padding */
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Add blur effect for glass-like transparency */
+    opacity: 0; /* Initially hide the rectangle */
+  }
+  
+  /* Show rectangle when sidebar is enlarged */
+  .side-bar7.enlarged .rectangle-icon {
+    opacity: 1;
+  }
+  
+  /* Sidebar styles */
+  .side-bar7 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #2e2e2f 58.73%, #919195); /* Match sidebar background color of frame-14 */
+    width: 8rem; /* Decreased sidebar width */
+    height: 100%;
+    overflow-y: auto;
+    transition: width 0.5s; /* Add transition for smooth sliding effect */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .side-bar7.enlarged {
+    width: 16rem; /* Decreased enlarged width of sidebar */
+  }
+  
+  .menu7 {
+    padding-top: 3rem; /* Adjust top padding for icon alignment */
+  }
+  
+  /* Frame options styles */
+  .frame-parent6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    gap: 1rem;
+  }
+  
+  .frame-child41 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  
+  .frame-child41 i {
+    margin-right: 1rem; /* Add margin between icon and text */
+    font-size: 1.5rem; /* Increase icon size */
+  }
+  
+  .frame-child41 .text {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .side-bar7.enlarged .frame-child41 .text {
+    opacity: 1;
+  }
+  
+  .side-bar7:not(.enlarged) .frame-child41 {
+    width: auto;
+    padding: 0.5rem;
+  }
+  
+  /* Sidebar toggle icon */
+  .sidebar-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; /* Move to upper right side */
+    font-size: 1.5rem;
+    color: yellow; /* Change color to yellow */
+    cursor: pointer;
+  }
+  
+  /* Additional styles for maintenance content */
+  .maintenance-content {
+    padding: 2rem;
+    background-color: #1b2424; /* Match background color of frame-14 */
+    color: #e4db01; /* Match text color of frame-14 */
+    font-family: 'Inter', sans-serif; /* Match font family of frame-14 */
+    margin-left: 8rem; /* Adjust margin to prevent content from being blocked by sidebar */
+  }
+  
+  .maintenance-text {
+    max-width: 800px; /* Limit text width */
+  }
+  
+  .maintenance-text h1 {
+    font-size: 2rem; /* Match heading font size of frame-14 */
+    color: yellow; /* Change heading color to yellow */
+  }
+  
+  .maintenance-text p {
+    font-size: 1.1rem; /* Match paragraph font size of frame-14 */
+  }
+  
+  .maintenance-text ul {
+    font-size: 1.1rem; /* Match list font size of frame-14 */
+  }
+  
+  /* Adjustments for aaa.png */
+  .aaa-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .aaa {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 2rem; /* Add spacing below image */
+  }
+  
+  /* Yellow text color */
+  .yellow {
+    color: yellow;
+  }
+  
+  /* Additional styles for navigation */
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem; /* Add margin above navigation */
+  }
+  
+  .next-page {
+    color: #fff; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .home-link {
+    color: #fff; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+  }
+  

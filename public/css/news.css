@@ -1,0 +1,64 @@
+/* Maintenance Content Section */
+.maintenance-content {
+    padding: 2rem;
+    background-color: #1b2424; /* Match background color of other pages */
+    color: #e4db01; /* Match text color of other pages */
+    font-family: 'Inter', sans-serif; /* Match font family of other pages */
+    margin-left: 8rem; /* Adjust margin to prevent content from being blocked by sidebar */
+  }
+  
+  /* Content box */
+  .content-box {
+    background-color: #2e2e2f; /* Match background color of other boxes */
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  /* Image container */
+  .image-container {
+    text-align: center;
+  }
+  
+  /* Image */
+  .aaa {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+  }
+  
+  /* Content description */
+  .content-description {
+    margin-top: 20px;
+  }
+  
+  /* Title */
+  .content-description h1 {
+    font-size: 2rem; /* Match heading font size of other pages */
+    color: yellow; /* Change heading color to yellow */
+  }
+  
+  /* Text */
+  .maintenance-text p {
+    font-size: 1rem; /* Decrease font size */
+  }
+  
+  .maintenance-text ul {
+    font-size: 1rem; /* Decrease font size */
+  }
+  
+  /* Upload button */
+  .upload-button {
+    display: block;
+    background-color: #2e2e2f; /* Match background color of other buttons */
+    color: #fff; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .upload-button:hover {
+    background-color: #688a8a; /* Change button color on hover */
+  }
+  

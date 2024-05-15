@@ -1,0 +1,103 @@
+/* Custom CSS for rectangular icon design */
+.rectangle-icon {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    border-radius: 15px; /* Rounded corners */
+    padding: 0.5rem; /* Add padding */
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Add blur effect for glass-like transparency */
+    opacity: 0; /* Initially hide the rectangle */
+  }
+  
+  /* Show rectangle when sidebar is enlarged */
+  .side-bar7.enlarged .rectangle-icon {
+    opacity: 1;
+  }
+  
+  /* Rest of your CSS */
+  .side-bar7 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #2e2e2f 58.73%, #919195);
+    width: 10rem; /* Increased width */
+    height: 100%;
+    overflow-y: auto;
+    transition: width 0.5s; /* Add transition for smooth sliding effect */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .side-bar7.enlarged {
+    width: 20rem; /* Enlarged width */
+  }
+  
+  .menu7 {
+    padding-top: 3rem; /* Adjust top padding for icon alignment */
+  }
+  
+  .frame-parent6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    gap: 1rem;
+  }
+  
+  .frame-child41 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  
+  .frame-child41 i {
+    margin-right: 1rem; /* Add margin between icon and text */
+    font-size: 1.5rem; /* Increase icon size */
+  }
+  
+  .frame-child41 .text {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .side-bar7.enlarged .frame-child41 .text {
+    opacity: 1;
+  }
+  
+  .side-bar7:not(.enlarged) .frame-child41 {
+    width: auto;
+    padding: 0.5rem;
+  }
+  
+  /* Sidebar toggle icon */
+  .sidebar-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; /* Move to upper right side */
+    font-size: 1.5rem;
+    color: yellow; /* Change color to yellow */
+    cursor: pointer;
+  }
+  
+  /* Restoring page colors */
+  .group-root {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(180deg, #1b2424 68.36%, #688a8a);
+    height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    font-size: 1.75rem;
+    color: #e4db01;
+    font-family: Inter;
+  }
+  
+  .logo_aneco {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
